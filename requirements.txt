@@ -1,5 +1,0 @@
-# Root requirements for Render auto-detection
-# This installs backend dependencies and adds gunicorn/uvicorn
--r backend/requirements.txt
-gunicorn>=21.0.0
-uvicorn[standard]>=0.24.0
