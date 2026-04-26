@@ -135,30 +135,6 @@ function AmbientBackground() {
   );
 }
 
-// Marquee Component
-function Marquee() {
-  const items = ['RISK ANALYSIS', 'PREDICT', 'APPROVE', 'SCORE', 'ASSESS', 'EVALUATE'];
-  
-  return (
-    <div className="relative overflow-hidden py-4 bg-accent/10 border-y border-accent/20">
-      <div className="flex marquee whitespace-nowrap">
-        {[...Array(4)].map((_, i) => (
-          <div key={i} className="flex items-center space-x-8 px-4">
-            {items.map((item, j) => (
-              <React.Fragment key={j}>
-                <span className="text-sm font-mono uppercase tracking-widest text-accent font-medium">
-                  {item}
-                </span>
-                <span className="text-accent/50">•</span>
-              </React.Fragment>
-            ))}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 // Main App Component
 function App() {
   const [formData, setFormData] = useState({
@@ -234,8 +210,6 @@ function App() {
       <AmbientBackground />
 
       <div className="relative z-10">
-        <Marquee />
-
         {/* Main Content */}
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           {/* Hero Section */}
