@@ -1,0 +1,9 @@
+# Root requirements for Render auto-detection
+# Backend dependencies
+fastapi
+uvicorn
+pydantic
+numpy
+scikit-learn
+python-multipart
+joblib
